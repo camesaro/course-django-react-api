@@ -1,7 +1,9 @@
-from rest_framework import serializers
-from .models import Movie, Rating
 from django.contrib.auth.models import User
+from rest_framework import serializers
 from rest_framework.authtoken.models import Token
+
+from .models import Movie, Rating
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
